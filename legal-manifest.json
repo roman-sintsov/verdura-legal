@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "kind": "public-ready",
+  "publicationReady": true,
+  "contentDigest": "baecd7fa5ce2f0f1a34be6a0a0d3905c3b27e05a64e3dce57c9a1a4ac6947831",
+  "files": [
+    "privacy/index.html",
+    "privacy/ru.html",
+    "privacy/cnr.html",
+    "support/index.html",
+    "support/ru.html",
+    "support/cnr.html"
+  ]
+}
