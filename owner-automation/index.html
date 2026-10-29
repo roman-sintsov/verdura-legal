@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Verdura owner automation is a private administration tool operated by Roman Sintsov for configured store spreadsheets and order workflows.">
+  <link rel="canonical" href="https://roman-sintsov.github.io/verdura-legal/owner-automation/">
+  <title>Verdura owner automation</title>
+  <style>
+    /* A quiet, single-column owner-tool document, consistent with the retail legal pages. */
+    :root {
+      color-scheme: light;
+      --bg: #f3f7f2;
+      --paper: #ffffff;
+      --ink: #182d23;
+      --muted: #4f6357;
+      --accent: #225c3c;
+      --line: #ccd9cf;
+      --font-display: "Trebuchet MS", "Segoe UI", sans-serif;
+      --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-label: ui-monospace, "SFMono-Regular", Consolas, monospace;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        color-scheme: dark;
+        --bg: #141e18;
+        --paper: #1c2921;
+        --ink: #eaf1e9;
+        --muted: #c1cfc1;
+        --accent: #b0dab8;
+        --line: #405044;
+      }
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #141e18;
+      --paper: #1c2921;
+      --ink: #eaf1e9;
+      --muted: #c1cfc1;
+      --accent: #b0dab8;
+      --line: #405044;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 1rem/1.7 var(--font-body); overflow-wrap: anywhere; }
+    .page { max-width: 50rem; margin-inline: auto; padding-block: 1.75rem 3.5rem; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+    header, nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.25rem; }
+    header { justify-content: space-between; padding-block: 0 1.5rem; border-bottom: 1px solid var(--line); }
+    header > *, nav > * { min-width: 0; }
+    .wordmark { font: 700 1rem/1.4 var(--font-display); color: var(--ink); text-decoration: none; }
+    a { color: var(--accent); text-underline-offset: 0.2em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+    .skip { position: absolute; left: max(16px, env(safe-area-inset-left, 0px)); top: calc(8px + env(safe-area-inset-top, 0px)); transform: translateY(-200%); background: var(--paper); padding: 0.5rem 0.75rem; z-index: 2; }
+    .skip:focus { transform: none; }
+    main { display: grid; gap: 2rem; padding-block: 1.75rem 0; }
+    main:focus { outline: none; }
+    .intro, section { display: grid; gap: 0.9rem; min-width: 0; }
+    .eyebrow { color: var(--accent); font: 0.78rem/1.5 var(--font-label); letter-spacing: 0.06em; text-transform: uppercase; }
+    h1, h2, p { margin: 0; }
+    h1, h2 { font-family: var(--font-display); text-wrap: balance; }
+    h1 { max-width: 18ch; font-size: clamp(2rem, 6vw, 2.9rem); line-height: 1.15; letter-spacing: -0.025em; }
+    h2 { font-size: 1.35rem; line-height: 1.35; }
+    .lede { max-width: 64ch; font-size: 1.13rem; color: var(--muted); }
+    section { border-top: 1px solid var(--line); padding-block: 1.4rem 0; }
+    ul { margin: 0; padding-inline-start: 1.35rem; display: grid; gap: 0.65rem; }
+    code { font-family: var(--font-label); font-size: 0.9em; }
+    .contact { color: var(--muted); }
+    .contact strong { color: var(--ink); }
+    footer { display: grid; gap: 0.6rem; margin-top: 2rem; border-top: 1px solid var(--line); padding-block: 1.25rem 0; color: var(--muted); font-size: 0.85rem; }
+    @media (max-width: 34rem) { header { align-items: flex-start; } header nav { width: 100%; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="page">
+    <header>
+      <a class="wordmark" href="index.html" aria-label="Verdura owner automation home">Verdura · owner tools</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="privacy/index.html">Privacy policy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="content" tabindex="-1">
+      <div class="intro">
+        <p class="eyebrow">Private store administration</p>
+        <h1>Verdura owner automation</h1>
+        <p class="lede">An administration tool for an authorized operator to maintain Verdura’s configured Google Sheets catalog and support its order workflow.</p>
+        <p>Operated by <strong>Roman Sintsov</strong>. This site explains the tool’s purpose and its use of Google data. It does not collect Google passwords, start an OAuth login, or provide a customer checkout.</p>
+      </div>
+      <section aria-labelledby="purpose">
+        <h2 id="purpose">What the tool does</h2>
+        <ul>
+          <li>Checks the configured <code>Products</code>, <code>Settings</code> and <code>Orders</code> spreadsheet structure and reports bounded diagnostics.</li>
+          <li>Supports reviewed product-image updates and separately approved setup or maintenance operations.</li>
+          <li>Checks WhatsApp notification metadata and supports the store’s separately configured order-notification workflow.</li>
+        </ul>
+        <p>Operations run through Google Apps Script. The local administration client verifies the configured project, deployment and operator identity before supported calls. It is not a general-purpose public spreadsheet editor.</p>
+      </section>
+      <section aria-labelledby="authorization">
+        <h2 id="authorization">Why Google authorization is requested</h2>
+        <p>The operator authorizes access needed for configured spreadsheets, Apps Script maintenance, external service requests and outgoing fallback email. Google account identity is used to verify the authorized operator.</p>
+        <p>The spreadsheet permission is broader than the configured workbooks. Restrictions to the store’s configured files are enforced by the application, not by a Google selected-file permission. The tool does not read Gmail inbox contents.</p>
+        <p><a href="privacy/index.html#permissions">Read the permission-by-permission explanation</a> in the privacy policy before granting access.</p>
+      </section>
+      <section aria-labelledby="customers">
+        <h2 id="customers">Store customers do not sign in to Google</h2>
+        <p>The customer application uses the store’s public catalog and order API. The owner administration login is separate; customers are not asked to grant these OAuth permissions.</p>
+        <p>The order runtime can save customer and order information in Google Sheets and send order summaries to the configured store recipient through WhatsApp/Meta and fallback email. The owner tool’s operator is identified here separately from the retail store operator.</p>
+        <p>For shopping and customer-order privacy, see the existing <a href="https://roman-sintsov.github.io/verdura-legal/privacy/">retail customer privacy policy</a> and <a href="https://roman-sintsov.github.io/verdura-legal/support/">store support page</a>. These information pages do not replace either page.</p>
+      </section>
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Support and privacy contact</h2>
+        <p class="contact"><strong>Roman Sintsov</strong><br><a href="mailto:mainsource.me@gmail.com">mainsource.me@gmail.com</a></p>
+        <p>Use this contact for owner-automation access, privacy questions and requests concerning data under the automation operator’s control. Do not send Google passwords, OAuth codes, tokens or customer-order contents in an initial support request.</p>
+      </section>
+    </main>
+    <footer>
+      <nav aria-label="Footer navigation"><a href="privacy/index.html">Owner-automation privacy policy</a><a href="#content">Back to top</a></nav>
+      <p>Information about the owner administration tool. Store customer policies are linked separately.</p>
+    </footer>
+  </div>
+</body>
+</html>

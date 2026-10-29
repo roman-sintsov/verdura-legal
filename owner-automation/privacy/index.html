@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Privacy policy for Verdura owner automation, operated by Roman Sintsov, covering Google data access, authorization, operational services and data removal.">
+  <link rel="canonical" href="https://roman-sintsov.github.io/verdura-legal/owner-automation/privacy/">
+  <title>Verdura owner automation Privacy</title>
+  <style>
+    /* A readable policy document sharing the owner-tool homepage’s restrained legal-page palette. */
+    :root {
+      color-scheme: light;
+      --bg: #f3f7f2;
+      --paper: #ffffff;
+      --ink: #182d23;
+      --muted: #4f6357;
+      --accent: #225c3c;
+      --line: #ccd9cf;
+      --font-display: "Trebuchet MS", "Segoe UI", sans-serif;
+      --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-label: ui-monospace, "SFMono-Regular", Consolas, monospace;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        color-scheme: dark;
+        --bg: #141e18;
+        --paper: #1c2921;
+        --ink: #eaf1e9;
+        --muted: #c1cfc1;
+        --accent: #b0dab8;
+        --line: #405044;
+      }
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #141e18;
+      --paper: #1c2921;
+      --ink: #eaf1e9;
+      --muted: #c1cfc1;
+      --accent: #b0dab8;
+      --line: #405044;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 1rem/1.7 var(--font-body); overflow-wrap: anywhere; }
+    .page { max-width: 50rem; margin-inline: auto; padding-block: 1.75rem 3.5rem; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+    header, nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.25rem; }
+    header { justify-content: space-between; padding-block: 0 1.5rem; border-bottom: 1px solid var(--line); }
+    header > *, nav > * { min-width: 0; }
+    .wordmark { font: 700 1rem/1.4 var(--font-display); color: var(--ink); text-decoration: none; }
+    a { color: var(--accent); text-underline-offset: 0.2em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+    .skip { position: absolute; left: max(16px, env(safe-area-inset-left, 0px)); top: calc(8px + env(safe-area-inset-top, 0px)); transform: translateY(-200%); background: var(--paper); padding: 0.5rem 0.75rem; z-index: 2; }
+    .skip:focus { transform: none; }
+    main { display: grid; gap: 2rem; padding-block: 1.75rem 0; }
+    main:focus { outline: none; }
+    .commitments { display: grid; gap: 0.5rem; border: 2px solid var(--accent); background: var(--paper); padding: 1rem 1.125rem; }
+    .commitments p { margin: 0; }
+    .intro, section { display: grid; gap: 0.9rem; min-width: 0; }
+    .eyebrow { color: var(--accent); font: 0.78rem/1.5 var(--font-label); letter-spacing: 0.06em; text-transform: uppercase; }
+    h1, h2, p { margin: 0; }
+    h1, h2 { font-family: var(--font-display); text-wrap: balance; }
+    h1 { font-size: clamp(2rem, 6vw, 2.9rem); line-height: 1.15; letter-spacing: -0.025em; }
+    h2 { font-size: 1.35rem; line-height: 1.35; }
+    .lede { max-width: 64ch; font-size: 1.13rem; color: var(--muted); }
+    section { border-top: 1px solid var(--line); padding-block: 1.4rem 0; }
+    .contents { display: grid; gap: 0.55rem; justify-items: start; }
+    ul { margin: 0; padding-inline-start: 1.35rem; display: grid; gap: 0.65rem; }
+    dl { margin: 0; display: grid; gap: 1rem; }
+    dl > div { min-width: 0; }
+    dt { font-weight: 700; }
+    dd { margin: 0.3rem 0 0; }
+    code { font-family: var(--font-label); font-size: 0.9em; }
+    .contact { color: var(--muted); }
+    .contact strong { color: var(--ink); }
+    footer { display: grid; gap: 0.6rem; margin-top: 2rem; border-top: 1px solid var(--line); padding-block: 1.25rem 0; color: var(--muted); font-size: 0.85rem; }
+    @media (max-width: 34rem) { header { align-items: flex-start; } header nav { width: 100%; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="page">
+    <header>
+      <a class="wordmark" href="../index.html" aria-label="Verdura owner automation home">Verdura · owner tools</a>
+      <nav aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html" aria-current="page">Privacy policy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="content" tabindex="-1">
+      <div class="intro">
+        <p class="eyebrow">Verdura owner automation</p>
+        <h1>Privacy policy</h1>
+        <p class="lede">How the owner administration tool uses Google account information, configured store data and authorization credentials.</p>
+        <p><strong>Effective date: 29 October 2026.</strong></p>
+        <p>Operator and privacy contact: <strong>Roman Sintsov</strong>, <a href="mailto:mainsource.me@gmail.com">mainsource.me@gmail.com</a>.</p>
+        <p>This policy concerns <strong>Verdura owner automation</strong>. It identifies the automation operator separately from the retail store operator. The store’s existing <a href="https://roman-sintsov.github.io/verdura-legal/privacy/">customer privacy policy</a> remains separate.</p>
+      </div>
+      <nav class="contents" aria-label="Policy sections">
+        <a href="#google-data">Google data and purposes</a>
+        <a href="#permissions">Requested permissions</a>
+        <a href="#storage">Storage and credentials</a>
+        <a href="#sharing">Services and recipients</a>
+        <a href="#retention">Retention and removal</a>
+        <a href="#access">Revoking access</a>
+        <a href="#data-use">Data-use commitments</a>
+        <a href="#contact">Contact and privacy requests</a>
+      </nav>
+      <section aria-labelledby="google-data">
+        <h2 id="google-data">Google data and purposes</h2>
+        <p>The operator uses Google authorization to run supported administration operations through a private Google Apps Script executable. Google account identity information, including the account identifier and verified-email information, is used to check that the signed-in account is the configured operator.</p>
+        <p>The workflow uses configured Products and Orders workbooks and the Settings sheet within the Products workbook. Relevant data includes product names, prices, units, availability and image references; store settings; spreadsheet identifiers and headers; and technical status, hashes, counts and operation records.</p>
+        <p>Owner-automation diagnostics and product-image maintenance read the relevant product and settings data. Their ordinary Orders checks inspect headers and capacity rather than returning customer rows. Some separately approved setup operations can add technical spreadsheet structure.</p>
+        <p>This limited diagnostic behavior does not describe the entire system. The order runtime reads and stores customer names, phone numbers, delivery addresses, order contents and related notification state. It can send order summaries to the configured store recipient. Customers are not required to sign in to Google or authorize the owner tool.</p>
+      </section>
+      <section aria-labelledby="permissions">
+        <h2 id="permissions">Requested permissions</h2>
+        <dl>
+          <div>
+            <dt>Google Sheets · <code>spreadsheets</code></dt>
+            <dd>Supports reading and updating the configured store spreadsheets for the supported operation. This Google permission is broad and can cover more spreadsheets than those the application uses. Configured-file restrictions come from application checks; this is not a selected-file OAuth grant.</dd>
+          </div>
+          <div>
+            <dt>External requests · <code>script.external_request</code></dt>
+            <dd>Allows Apps Script to contact configured external services, including WhatsApp/Meta for notification metadata and the order-notification workflow.</dd>
+          </div>
+          <div>
+            <dt>Apps Script maintenance · <code>script.scriptapp</code></dt>
+            <dd>Supports maintenance-trigger operations for configured automations. Read-only diagnostics do not implicitly install triggers, activate ordering or send messages; those operations have separate controls.</dd>
+          </div>
+          <div>
+            <dt>Outgoing email · <code>script.send_mail</code></dt>
+            <dd>Supports fallback order-alert email to the configured recipient. The tool does not read Gmail inbox contents.</dd>
+          </div>
+          <div>
+            <dt>Operator identity · <code>openid</code> and <code>userinfo.email</code></dt>
+            <dd>Allows the local client to verify the operator’s Google identity and maintain its account binding. The application does not ask for the operator’s Google password.</dd>
+          </div>
+        </dl>
+        <p>Google requires the executable’s declared scopes for this integration, including scopes that an individual diagnostic call does not exercise. Granting a scope is not approval for arbitrary administrative actions.</p>
+      </section>
+      <section aria-labelledby="storage">
+        <h2 id="storage">Storage and authorization credentials</h2>
+        <p>Configured store records are stored in Google Sheets. Apps Script maintains service configuration and technical state, including notification-check results. Local administration files can contain the configured target, account binding, OAuth client configuration, refresh credentials, scopes and technical operation journals.</p>
+        <p>The local client stores its persistent Google authorization files outside the application repository and restricts filesystem access. Access tokens are held in memory. This describes the implemented storage controls; it is not a claim that the local files are encrypted or immune to device compromise.</p>
+        <p>The separate clasp project-management login has its own credentials and is distinct from the private execution client’s OAuth grant. Google separately manages authorization used by the deployed Apps Script runtime.</p>
+        <p>Google refresh credentials are not included in the customer application, these website files or order-notification summaries. Support requests should not contain passwords, OAuth codes, tokens, complete callback URLs or unnecessary customer details.</p>
+      </section>
+      <section aria-labelledby="sharing">
+        <h2 id="sharing">Services and recipients</h2>
+        <ul>
+          <li><strong>Google</strong> provides authorization, Apps Script execution, spreadsheet storage and related technical logging.</li>
+          <li><strong>WhatsApp/Meta</strong> provides template/sender metadata and the configured order-notification channel. The order runtime can transmit customer contact, delivery and order details in the store recipient’s notification.</li>
+          <li><strong>The configured email recipient and email services</strong> can receive fallback alerts containing an order summary and a link to the Orders workbook. This uses outgoing email, not mailbox reading.</li>
+          <li><strong>Configured image hosts, including Cloudinary,</strong> support product-media operations and catalog image delivery. Their connection information and hosted product media are distinct from Google OAuth refresh credentials.</li>
+          <li><strong>GitHub Pages</strong> hosts these static information pages. The pages contain no forms, analytics or externally loaded assets. Hosting providers can still process ordinary request and connection information under their own practices.</li>
+        </ul>
+        <p>These services and message recipients can retain their own copies or records and may process information in other countries. The retail customer policy separately describes the store’s customer-data workflow.</p>
+      </section>
+      <section aria-labelledby="retention">
+        <h2 id="retention">Retention and removal</h2>
+        <p>No fixed automatic deletion period is established here for local administration credentials or technical journals. Persistent files remain until removed or replaced through the relevant owner-controlled process; expiration or revocation of an authorization does not itself remove those files.</p>
+        <p>The currently published retail policy describes order records and related customer data remaining in Google Sheets without an active automatic expiry or deletion task. This policy does not introduce a 30-day deletion promise or change that customer policy.</p>
+        <p>Requests to remove information under the automation operator’s control can be sent to the contact below. Removal requires identifying the relevant record and resolving pending or uncertain operations. It must not silently discard accepted orders.</p>
+        <p>Removing working data or local files does not automatically remove spreadsheet version history, backups, exports, Google/provider logs, WhatsApp messages, email copies or information already held by recipients. The operator cannot promise deletion of every provider or recipient copy.</p>
+      </section>
+      <section aria-labelledby="access">
+        <h2 id="access">Revoking access and stopping operations</h2>
+        <p>The connected Google account can review and revoke app access through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Removing local execution credentials prevents that local client from using them again.</p>
+        <p>The Desktop OAuth client, separate management login, deployed webapp and maintenance timers are different authorization or execution components. Revoking one grant must not be assumed to stop separately authorized runtime or trigger activity. Stopping store intake or maintenance automation is a separate administrative action.</p>
+        <p>Revocation does not delete existing spreadsheet records or messages. Contact the operator for help identifying the relevant access and removal steps. Google can also expire or invalidate authorization; no permanent-token or uninterrupted-service guarantee is made.</p>
+      </section>
+      <section aria-labelledby="data-use">
+        <h2 id="data-use">Data-use commitments</h2>
+        <aside class="commitments" role="note" aria-label="Google data-use commitments">
+          <p>Google user data is used for the supported, authorized store-administration and operational purposes described in this policy. It is not sold or used for advertising.</p>
+          <p>Verdura owner automation’s use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+        </aside>
+      </section>
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact and privacy requests</h2>
+        <p class="contact"><strong>Roman Sintsov</strong><br><a href="mailto:mainsource.me@gmail.com">mainsource.me@gmail.com</a></p>
+        <p>Contact the operator about owner-automation privacy, access, correction or removal. In an initial request, describe the issue and include only the minimum information needed to locate it. Do not send credentials or copies of complete customer orders.</p>
+        <p>Questions about shopping and the store’s customer-data processing are covered separately by the <a href="https://roman-sintsov.github.io/verdura-legal/privacy/">retail customer privacy policy</a>.</p>
+      </section>
+    </main>
+    <footer>
+      <nav aria-label="Footer navigation"><a href="../index.html">Verdura owner automation home</a><a href="#content">Back to top</a></nav>
+      <p>Effective from 29 October 2026. Operated by Roman Sintsov.</p>
+    </footer>
+  </div>
+</body>
+</html>
